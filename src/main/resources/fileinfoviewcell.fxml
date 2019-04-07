@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="1.7976931348623157E308" prefHeight="64.0" prefWidth="167.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="preview" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="preview" wrapText="true">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="date" textOverrun="CLIP">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

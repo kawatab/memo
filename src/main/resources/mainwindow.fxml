@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ButtonBar>
+              <buttons>
+                  <ChoiceBox fx:id="folderChoice" prefWidth="150.0" />
+      	    <Button fx:id="newButton" onAction="#clickNew" text="New" />
+      	    <Button fx:id="moveButton" onAction="#clickMove" text="Move" />
+              </buttons>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ButtonBar>
+            <ListView fx:id="listView" fixedCellSize="64.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <ButtonBar>
+              <buttons>
+                  <Button mnemonicParsing="false" onAction="#clickSelectAll" text="Select All" />
+                  <Button fx:id="cutButton" mnemonicParsing="false" onAction="#clickCutText" text="Cut" />
+                  <Button mnemonicParsing="false" onAction="#clickCopyText" text="Copy" />
+                  <Button fx:id="pasteButton" mnemonicParsing="false" onAction="#clickPaste" text="Paste" />
+              </buttons>
+            </ButtonBar>
+            <TextArea fx:id="textArea" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
