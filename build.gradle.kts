@@ -10,12 +10,20 @@ plugins {
 
     // Apply the application plugin to add support for building a CLI application.
     application
+
+    // for JavaFX (11 and later)
+    id("org.openjfx.javafxplugin").version("0.0.5")
 }
 
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+}
+
+// for JavaFX (11 and later)
+javafx {
+    modules = listOf("javafx.base", "javafx.controls", "javafx.fxml", "javafx.graphics")
 }
 
 dependencies {
